@@ -1,8 +1,10 @@
 var express = require("express");
 var router = express.Router();
+require("dotenv").config();
 const mongoose = require("mongoose");
+console.log(process.env.password);
 mongoose.connect(
-  "mongodb+srv://hripple46:9dLjkWYCta_nncN@cluster0.xe9kaoh.mongodb.net/?retryWrites=true&w=majority"
+  `mongodb+srv://hripple46:${process.env.password}@cluster0.xe9kaoh.mongodb.net/?retryWrites=true&w=majority`
 );
 
 const messageSchema = new mongoose.Schema({
