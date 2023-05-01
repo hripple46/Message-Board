@@ -4,5 +4,27 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+ul {
+  position: relative;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 1em;
+  list-style-type: none;
+  height: 50px;
+  width: 400px;
+  background-color: #00b7ff24;
+  border-radius: 5px;
+}
+ul > .date {
+  position: absolute;
+  bottom: 8px;
+  font-size: 8px;
+}
+ul > .user {
+  font-size: 12px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
